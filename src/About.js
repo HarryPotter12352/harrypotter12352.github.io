@@ -4,7 +4,6 @@ const AboutSection = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
   background: #000;
   color: #fff;
   font-family: 'Press Start 2P', cursive;
@@ -60,7 +59,7 @@ const AboutMe = () => (
     <TextContainer>
       <Heading>About Me</Heading>
       <Paragraph>
-        Hi, I'm Avi, a high school student based out of India. I'm particularly interested in physics, math, and computer science. I love cosmology and everything that comes with it, and using computational methods to solve physics problems. I also enjoy making websites in my free time. Also a huge Formula 1 fan.
+        Hi, I'm Avi, a high school student based in India. I'm particularly interested in physics, math, and computer science. I love cosmology and everything that comes with it, and using computational methods to solve physics problems. I also enjoy making websites in my free time. Also a huge Formula 1 fan.
       </Paragraph>
     </TextContainer>
   </AboutSection>
