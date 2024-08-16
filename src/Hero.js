@@ -120,7 +120,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <HeroContainer>
+    <HeroContainer id = "hero">
       <BackgroundOverlay />
       <Title>Hi, I'm Avi</Title>
       <Subtitle>Physics Enthusiast and Web Developer</Subtitle>

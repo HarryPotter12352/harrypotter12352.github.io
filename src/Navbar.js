@@ -37,6 +37,7 @@ const NavbarLink = styled(Link)`
 
   &:hover {
     color: #00ff99;
+    cursor: pointer; 
 
     &::after {
       content: '';
