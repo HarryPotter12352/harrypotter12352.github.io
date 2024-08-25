@@ -70,7 +70,7 @@ const PublicationsSection = () => {
         <PublicationCard>
           <div>
             <PublicationTitle>
-              <Link href="/pixelatedarxiv.html" target="_blank" rel="noopener noreferrer">
+              <Link href="https://arxiv.org/abs/2408.02116" target="_blank" rel="noopener noreferrer">
                 A speculative model for cyclic information preservation in Kerr-Newman spacetime using closed timelike curves
               </Link>
             </PublicationTitle>
