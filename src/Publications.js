@@ -81,7 +81,7 @@ const PublicationsSection = () => {
               Category: Cosmology
             </PublicationDetails>
             <PublicationDetails>
-              Status: Submitted to Physical Review D
+              Status: Pre-printed
             </PublicationDetails>
           </div>
         </PublicationCard>
