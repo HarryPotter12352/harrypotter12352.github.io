@@ -87,8 +87,10 @@ const PublicationsSection = () => {
         </PublicationCard>
         <PublicationCard>
           <div>
-            <PublicationTitle>            
+            <PublicationTitle> 
+              <Link href = "https://aclanthology.org/2024.nlp4pi-1.2/">      
               Multilingual Fact-Checking using LLMs
+              </Link>
             </PublicationTitle>
             <PublicationDetails>
               Author(s): Aryan Singhal, Thomas Law, Coby Kassner, Evan Duan, Aviral Damle, Ayushman Gupta, Ryan Luo Li, Alin Jain
@@ -98,22 +100,6 @@ const PublicationsSection = () => {
             </PublicationDetails>
             <PublicationDetails>
               Status: Awaiting pre-print
-            </PublicationDetails>
-          </div>
-        </PublicationCard>
-        <PublicationCard>
-          <div>
-            <PublicationTitle>            
-              Using Hybrid Quantum Physics Informed Neural Networks to Simulate Fermion Motion
-            </PublicationTitle>
-            <PublicationDetails>
-              Author(s): Aviral Damle et. al (to be decided)
-            </PublicationDetails>
-            <PublicationDetails>
-              Category: Computational Physics
-            </PublicationDetails>
-            <PublicationDetails>
-              Status: Work in progress
             </PublicationDetails>
           </div>
         </PublicationCard>
