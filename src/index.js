@@ -9,6 +9,8 @@ import PublicationsSection from './Publications';
 import ContactSection from './Contact';
 import Navbar from './Navbar';
 import './index.css'; // Import global CSS if you have one
+import PhysicsUtilitiesSection from './tools';
+
 
 // Render the App component wrapped with Router for routing capabilities
 ReactDOM.render(
@@ -18,7 +20,8 @@ ReactDOM.render(
     <About />
     <Experience />
     <PublicationsSection />
-    <ContactSection />
+    <PhysicsUtilitiesSection />
+    <ContactSection /> 
   </Router>,
   document.getElementById('root')
 );
