@@ -29,7 +29,7 @@ const NavbarLinks = styled.div`
   gap: 20px; /* Adjusted gap */
 `;
 
-const NavbarLink = styled(Link)`
+const NavbarLink = styled.a`
   color: white;
   font-size: 1rem; /* Adjusted font size */
   text-decoration: none;
@@ -64,12 +64,16 @@ const NavbarLink = styled(Link)`
 const Navbar = () => {
   return (
     <NavbarContainer>
-      <NavbarLogo>Aviral Damle</NavbarLogo>
+      <NavbarLogo>
+        <Link to="hero" smooth={true} duration={500}>Aviral Damle</Link>
+      </NavbarLogo>
       <NavbarLinks>
-        <NavbarLink to="hero" smooth={true} duration={500}>Home</NavbarLink>
-        <NavbarLink to="experience" smooth={true} duration={500}>Experience</NavbarLink>
-        <NavbarLink to="publications" smooth={true} duration={500}>Publications</NavbarLink>
-        <NavbarLink to="contact" smooth={true} duration={500}>Contact</NavbarLink>
+        <NavbarLink href="/#hero" smooth={true} duration={500}>Home</NavbarLink>
+        <NavbarLink href="/#experience" smooth={true} duration={500}>Experience</NavbarLink>
+        <NavbarLink href="/#publications" smooth={true} duration={500}>Publications</NavbarLink>
+        
+        <NavbarLink href = "/#blogs" smooth = {true} duration = {500}>My Blogs</NavbarLink>
+        <NavbarLink href="/#contact" smooth={true} duration={500}>Contact</NavbarLink>
       </NavbarLinks>
     </NavbarContainer>
   );
