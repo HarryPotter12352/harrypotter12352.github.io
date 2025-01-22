@@ -71,7 +71,7 @@ const BlogsSection = () => {
                 <BlogCard>
                     <div>
                         <BlogTitle>
-                            <Link href="/blognewyear" target="_blank" rel="noopener noreferrer">
+                            <Link href="/#blognewyear" target="_blank" rel="noopener noreferrer">
                                 thoguhts about the new year
                             </Link>
                         </BlogTitle>
