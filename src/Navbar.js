@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll'; // Use react-scroll's Link for internal smooth scrolling
+import { Link } from 'react-router-dom'; // Use react-router-dom's Link for page navigation
 
 const NavbarContainer = styled.nav`
   background-color: black;
   color: white;
   font-family: 'Press Start 2P', cursive;
-  padding: 15px 30px; /* Increased padding */
+  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,25 +20,25 @@ const NavbarContainer = styled.nav`
 `;
 
 const NavbarLogo = styled.h1`
-  font-size: 1.5rem; /* Adjusted font size */
+  font-size: 1.5rem;
   margin: 0;
   text-shadow: 1px 1px #ff0000, 2px 2px #00ff00, 3px 3px #0000ff;
 `;
 
 const NavbarLinks = styled.div`
   display: flex;
-  gap: 20px; /* Adjusted gap */
+  gap: 20px;
 `;
 
-const NavbarLink = styled.a`
+const NavbarLink = styled.div`
   color: white;
-  font-size: 1rem; /* Adjusted font size */
+  font-size: 1rem;
   text-decoration: none;
   position: relative;
 
   &:hover {
     color: #00ff99;
-    cursor: pointer; 
+    cursor: pointer;
 
     &::after {
       content: '';
@@ -65,15 +66,29 @@ const Navbar = () => {
   return (
     <NavbarContainer>
       <NavbarLogo>
-        <Link to="hero" smooth={true} duration={500}>Aviral Damle</Link>
+        <ScrollLink to="hero" smooth={true} duration={500}>
+          Aviral Damle
+        </ScrollLink>
       </NavbarLogo>
       <NavbarLinks>
-        <NavbarLink href="/#hero" smooth={true} duration={500}>Home</NavbarLink>
-        <NavbarLink href="/#experience" smooth={true} duration={500}>Experience</NavbarLink>
-        <NavbarLink href="/#publications" smooth={true} duration={500}>Publications</NavbarLink>
-        
-        <NavbarLink href = "/#blogs" smooth = {true} duration = {500}>My Blogs</NavbarLink>
-        <NavbarLink href="/#contact" smooth={true} duration={500}>Contact</NavbarLink>
+        {/* Page navigation using Link from react-router-dom */}
+        <NavbarLink>
+          <Link to="/">Home</Link>
+        </NavbarLink>
+
+        {/* Smooth scrolling to sections within the same page */}
+        <NavbarLink>
+          <ScrollLink to="experience" smooth={true} duration={500}>Experience</ScrollLink>
+        </NavbarLink>
+        <NavbarLink>
+          <ScrollLink to="publications" smooth={true} duration={500}>Publications</ScrollLink>
+        </NavbarLink>
+        <NavbarLink>
+          <ScrollLink to="blogs" smooth={true} duration={500}>My Blogs</ScrollLink>
+        </NavbarLink>
+        <NavbarLink>
+          <ScrollLink to="contact" smooth={true} duration={500}>Contact</ScrollLink>
+        </NavbarLink>
       </NavbarLinks>
     </NavbarContainer>
   );

@@ -1,19 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Use BrowserRouter
 import App from './App';
-import './index.css'; 
+import './index.css';
+import BlogNewYear from './blog/blognewyear'; // Import the blog page for routing
 
-import BlogNewYear from './blog/blognewyear';
-
-// Render the App component wrapped with Router for routing capabilities
 ReactDOM.render(
-
-  <Router basename={process.env.PUBLIC_URL}>
+  <Router basename={process.env.PUBLIC_URL}> {/* Ensure correct base path for GitHub Pages */}
     <Routes>
-    <Route path = "/" element = {<App />}/>
-    <Route path ="/blognewyear" element = {<BlogNewYear/>}/>
-    </Routes> 
+      {/* Route for the home page */}
+      <Route path="/" element={<App />} />
+      
+      {/* Route for BlogNewYear page */}
+      <Route path="/blognewyear" element={<BlogNewYear />} />
+      
+      {/* Add other routes as needed */}
+    </Routes>
   </Router>,
   document.getElementById('root')
 );

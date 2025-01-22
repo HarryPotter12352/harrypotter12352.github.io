@@ -79,7 +79,7 @@ const PhysicsUtilitiesSection = () => {
                 <SectionHeaderText>I enjoy making some physics utilities from time to time and posting them on GitHub or on this site here. Over time, I'll continue working on more websites for them so they can be more accessible.</SectionHeaderText>
             <PhysicsList>
                 <PhysicsCard>
-                    <PhysicsHeader><Link href = "https://avirald.me/brans-dicke-calculator">Brans Dicke Theory Solver</Link></PhysicsHeader>
+                    <PhysicsHeader><Link href = "https://harrypotter12352.github.io/brans-dicke-calculator">Brans Dicke Theory Solver</Link></PhysicsHeader>
                     <PhysicsDescription>The Brans-Dicke theory is a somewhat complicated scalar-tensor theory of gravitation. This solver allows one to obtain the full Einstein tensor by inputting the parameters required for computation.</PhysicsDescription>
                 </PhysicsCard>
                 <PhysicsCard>
