@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link as ScrollLink } from 'react-scroll'; // Use react-scroll's Link for internal smooth scrolling
-import { Link } from 'react-router-dom'; // Use react-router-dom's Link for page navigation
+import { Link as ScrollLink } from 'react-scroll'; // For smooth scrolling
+import { Link } from 'react-router-dom'; // For page navigation
 
 const NavbarContainer = styled.nav`
   background-color: black;
@@ -71,23 +71,30 @@ const Navbar = () => {
         </ScrollLink>
       </NavbarLogo>
       <NavbarLinks>
-        {/* Page navigation using Link from react-router-dom */}
+        {/* Page navigation */}
         <NavbarLink>
-          <Link to="/">Home</Link>
+          <ScrollLink to="/">Home</ScrollLink>
         </NavbarLink>
-
-        {/* Smooth scrolling to sections within the same page */}
+        {/* Smooth scrolling */}
         <NavbarLink>
-          <ScrollLink to="experience" smooth={true} duration={500}>Experience</ScrollLink>
-        </NavbarLink>
-        <NavbarLink>
-          <ScrollLink to="publications" smooth={true} duration={500}>Publications</ScrollLink>
+          <ScrollLink to="experience" smooth={true} duration={500}>
+            Experience
+          </ScrollLink>
         </NavbarLink>
         <NavbarLink>
-          <ScrollLink to="blogs" smooth={true} duration={500}>My Blogs</ScrollLink>
+          <ScrollLink to="publications" smooth={true} duration={500}>
+            Publications
+          </ScrollLink>
         </NavbarLink>
         <NavbarLink>
-          <ScrollLink to="contact" smooth={true} duration={500}>Contact</ScrollLink>
+          <ScrollLink to="blogs" smooth={true} duration={500}>
+            My Blogs
+          </ScrollLink>
+        </NavbarLink>
+        <NavbarLink>
+          <ScrollLink to="contact" smooth={true} duration={500}>
+            Contact
+          </ScrollLink>
         </NavbarLink>
       </NavbarLinks>
     </NavbarContainer>

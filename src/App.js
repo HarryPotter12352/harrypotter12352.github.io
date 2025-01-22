@@ -1,5 +1,4 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom'; // For potential future routing
 import Hero from './Hero';
 import Navbar from './Navbar';
 import About from './About';
@@ -8,19 +7,32 @@ import PublicationsSection from './Publications';
 import PhysicsUtilitiesSection from './tools';
 import ContactSection from './Contact';
 import BlogsSection from './Blogs';
-import BlogNewYear from './blog/blognewyear';
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
-      <Experience />
-      <PublicationsSection />
-      <PhysicsUtilitiesSection />
-      <BlogsSection />
-      <ContactSection />
+      <div id="hero">
+        <Hero />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="experience">
+        <Experience />
+      </div>
+      <div id="publications">
+        <PublicationsSection />
+      </div>
+      <div id="tools">
+        <PhysicsUtilitiesSection />
+      </div>
+      <div id="blogs">
+        <BlogsSection />
+      </div>
+      <div id="contact">
+        <ContactSection />
+      </div>
     </>
   );
 };
