@@ -86,6 +86,16 @@ const BlogsSection = () => {
                         </BlogDetails>
                     </div>
                 </BlogCard>
+                <BlogCard>
+                    <div>
+                        <BlogTitle>
+                            <Link href = "/#light" target="_blank" rel = "noopener noreferred">Light, a poem</Link>
+                        </BlogTitle>
+                        <BlogDetails>Author: Avi Damle</BlogDetails>
+                        <BlogDetails>Category: Poetry</BlogDetails>
+                        <BlogDetails>Published: February 2025</BlogDetails>
+                    </div>
+                </BlogCard> 
             </BlogsList>
         </BlogsContainer>
     );
